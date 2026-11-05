@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>A Taste of Tuscany</title>
+        <link type="text/css" rel="stylesheet" href="w16_Tuscany.css" />
+        <script> 
+            function action() {
+            if (document.getElementById('specials').style.display === 'none') {
+            const variable = document.getElementById('specials');   
+            variable.style.display = 'block'
+            }
+            else {
+            const variable = document.getElementById('specials');
+            variable.style.display = 'none'
+            }
+            }
+        </script>
+    </head>
+
+    <body>
+        <article>
+            <h1><b>A Taste of Tuscany</b></h1>
+            <h2><b>Italian Resturaunt</b></h2>
+            <p>234 Arezzo Avenue
+            Sherwood Park
+            </p>
+            <img src="https://t3.ftcdn.net/jpg/16/15/41/06/360_F_1615410604_qLhq7U6wVBFbQCQ9eOwFryrAcyo09Avw.jpg" alt="a taste of tuscany" width="428" height="228">
+            <br/>
+            <ul style="list-style-position: inside;">
+                <li>Fine Italian Dining</li>
+                <li><a href="w14_specials.html">Daily Specials</a></li>
+                <li>Licensed</li>
+                <li>Banquet Room</li>
+                <li>Open Daily Until 11 pm</li>
+                <li>Eat In, Take Out, Delivery</li>
+                <li>Call 780.555.1234</li>
+            </ul>
+        </article>
+
+        <br/>
+        <div class="dropdown">
+            <h3 onclick="action()" ><b>Click To See Todays Special</b></h3>
+        </div> 
+
+        <article class="specials" id="specials">
+            <h1><b>Today’s Special</b></h1>
+            <h2>Valigette (Beef Rolls)</h2>
+            <h2>$14.95</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEP3DcQf1mNrj72LCnkuvqKuJcX1YQn2iTrhq_4WRI9w&s=10" height="228" width="258">
+            <ol style="list-style-position: inside;">    
+                <li>Pasta e Fagioli</li>
+                <li>Ravioli Nudi</li>
+                <li>Fettunta</li>
+                <li>Crostini con Salsiccia</li>
+                <li>Ribollita</li>
+            </ol>
+            <p><a href="w14_Tuscany.html">Home</a></p>
+        </article>
+    </body>
+</html>
